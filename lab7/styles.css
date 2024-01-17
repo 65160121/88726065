@@ -4,27 +4,24 @@ body {
     text-align: center;
     margin: 20px;
     background-color: #f8f8f8;
-}
-
-h1 {
+    }
+    h1 {
     color: #333;
     font-size: 24px;
-    background-color: #48e7fc;
+    background-color: #bbffb2;
     padding: 15px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-ul {
+    }
+    ul {
     list-style-type: none;
     padding: 0;
-}
-
-li {
+    }
+    li {
     background-color: #fff;
-
+    
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
@@ -33,32 +30,28 @@ li {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s, transform 0.2s;
-}
-
-li.completed {
+    }
+    li.completed {
     background-color: #d4edda;
     text-decoration: line-through;
-}
-
-input[type="text"] {
+    }
+    input[type="text"] {
     width: 60%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-right: 10px;
     font-size: 16px;
-}
-
-button {
+    }
+    button {
     padding: 12px 24px;
-    background-color: #f7649c;
+    background-color: #ffaced;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-button:hover {
+    }
+    button:hover {
     background-color: #0056b3;
-}
+    }
