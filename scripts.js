@@ -16,17 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
             todos.push(todoItem);
             renderTodoList();
             todoInput.value = "";
+            // ฟังก์ชัน addTodo นี้ถูกออกแบบมาเพื่อทำงานกับส่วนต่าง ๆ ของเว็บแอปพลิเคชันที่เกี่ยวข้องกับการเพิ่มรายการ "to-do" ลงในรายการที่แสดงผลบนหน้าเว็บ.
         }
     }
     // ลบรายการ Todo
     function deleteTodo(index) {
         todos.splice(index, 1);
         renderTodoList();
+        // ฟังก์ชัน deleteTodo นี้ถูกออกแบบมาเพื่อลบรายการ "to-do" จากอาร์เรย์ todos ที่มีดัชนี (index) ที่กำหนด และจากนั้นรีเรนเดอร์รายการ "to-do" ใหม่
     }
     // ตรวจสอบ/ยกเลิกการเสร็จสิ้นรายการ Todo
     function toggleComplete(index) {
         todos[index].completed = !todos[index].completed;
         renderTodoList();
+        // ฟังก์ชัน toggleComplete นี้ถูกออกแบบมาเพื่อเปลี่ยนสถานะการเสร็จสิ้นหรือยังไม่เสร็จสิ้นของ "to-do" ที่มีดัชนี (index) ที่กำหนด และจากนั้นรีเรนเดอร์รายการ "to-do" ใหม่
     }
     // แสดงรายการ Todo บนหน้าเว็บ
     function renderTodoList() {
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             listItem.appendChild(completeButton);
             listItem.appendChild(deleteButton);
             todoList.appendChild(listItem);
+            // ฟังก์ชัน renderTodoList นี้ถูกออกแบบมาเพื่อแสดงผลรายการ "to-do" บนหน้าเว็บ
         }
     }
     // การกดปุ่ ม "เพิ่ม"
